@@ -4,18 +4,31 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
 
-@media screen and (max-width:480px) {
+/*
+!for too small
+*/
+@media screen and (max-width:340px) {
+    p.all_p1 {
+        font-size: 10px;
+    }
+}
+
+/*
+!for mobile and i-pad
+*/
+@media screen and (max-width:768px) {
+
     header#hd_1 {
         position: relative;
         width: 100%;
         background: #fdfbfb;
-        color: rgb(113, 202, 12);
+        color: #303030;
         font-weight: 600;
         font-size: 30px;
         padding: 8px 0;
         text-align: center;
         word-spacing: 2px;
-        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.301);
     }
 
     div.dv_1 {
@@ -34,6 +47,7 @@
         padding: 5px;
         border-radius: 3px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        cursor: pointer;
     }
 
     ._sp_dv_tgl_1 {
@@ -43,6 +57,7 @@
 
     div.cm_d1 {
         position: absolute;
+        width: 100px;
         transform: translate(-50%, -50%);
         display: none;
     }
@@ -52,18 +67,18 @@
     }
 
     div.dv_2_n {
-        top: 155px;
-        left: 265px;
+        top: 160px;
+        left: 250px;
     }
 
     div.dv_3_n {
-        top: 310px;
-        left: 285px;
+        top: 315px;
+        left: 250px;
     }
 
     div.dv_4_n {
-        top: 520px;
-        left: 265px;
+        top: 530px;
+        left: 250px;
     }
 
     p.cm_d1_sp1 {
@@ -74,6 +89,7 @@
         padding: 5px;
         border-radius: 3px;
         text-align: center;
+        cursor: pointer;
     }
 
     div.dv_2 {
@@ -215,25 +231,271 @@
     }
 
     p.pp1 {
-        top: 205px;
+        top: 200px;
         left: 210px;
         display: none;
     }
 
     p.pp2 {
-        top: 370px;
+        top: 365px;
         left: 210px;
         display: none;
     }
 
     p.pp3 {
-        top: 440px;
+        top: 435px;
         left: 210px;
         display: none;
     }
 
     p.pp4 {
+        top: 565px;
+        left: 210px;
+        display: none;
+    }
+
+    ._txa {
+        display: block !important;
+    }
+}
+
+/*
+!for pc
+*/
+@media screen and (min-width:769px) {
+
+    header#hd_1 {
+        position: relative;
+        width: 100%;
+        background: #fdfbfb;
+        color: #303030;
+        font-weight: 600;
+        font-size: 30px;
+        padding: 8px 0;
+        text-align: center;
+        word-spacing: 2px;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.301);
+    }
+
+    div.dv_1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 150ms ease-in-out;
+    }
+
+    span#th_1 {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background: #f72f2f;
+        padding: 5px;
+        border-radius: 3px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        cursor: pointer;
+    }
+
+    ._sp_dv_tgl_1 {
+        top: 100px !important;
+        left: 80px !important;
+    }
+
+    div.cm_d1 {
+        position: absolute;
+        width: 170px;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    .dl_n {
+        display: block !important;
+    }
+
+    div.dv_2_n {
+        top: 160px;
+        left: 280px;
+    }
+
+    div.dv_3_n {
+        top: 315px;
+        left: 280px;
+    }
+
+    div.dv_4_n {
+        top: 530px;
+        left: 280px;
+    }
+
+    p.cm_d1_sp1 {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+        background: #f72f2f;
+        padding: 5px;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    div.dv_2 {
+        position: absolute;
+        top: 125px;
+        left: 80px;
+        background: #e0a810;
+        padding: 0px 3px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        transition: none;
+    }
+
+    .pd_dv_2 {
+        padding: 200px 3px !important;
+        transition: all 1250ms ease-in-out !important;
+    }
+
+    div.dv_3 {
+        position: absolute;
+        top: 155px;
+        left: 95px;
+        background: #e0a810;
+        padding: 3px 0px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        transition: none;
+    }
+
+    div.dv_4 {
+        position: absolute;
+        top: 310px;
+        left: 95px;
+        background: #e0a810;
+        padding: 3px 0px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        transition: none;
+    }
+
+    div.dv_5 {
+        position: absolute;
+        top: 520px;
+        left: 95px;
+        background: #e0a810;
+        padding: 3px 0px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        transition: none;
+    }
+
+    .all_sd_1 {
+        padding: 3px 40px !important;
+        transition: all 1250ms ease-in-out !important;
+    }
+
+    div.ccdv_ {
+        position: absolute;
+        background: #e0a810;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.459);
+        transition: none;
+    }
+
+    div.dv_6 {
+        top: 170px;
+        left: 175px;
+        padding: 0px 3px;
+    }
+
+    div.dv_7 {
+        top: 205px;
+        left: 185px;
+        padding: 3px 0px;
+    }
+
+    ._t6 {
+        padding: 20px 3px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    ._t7 {
+        padding: 3px 10px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    div.dv_8 {
+        top: 325px;
+        left: 175px;
+        padding: 0px 3px;
+    }
+
+    div.dv_9 {
+        top: 370px;
+        left: 185px;
+        padding: 3px 0px;
+    }
+
+    div.dv_10 {
+        top: 440px;
+        left: 185px;
+        padding: 3px 0px;
+    }
+
+    ._t8 {
+        padding: 60px 3px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    ._t9 {
+        padding: 3px 10px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    ._t10 {
+        padding: 3px 10px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    div.dv_11 {
+        top: 535px;
+        left: 175px;
+        padding: 0px 3px;
+    }
+
+    div.dv_12 {
         top: 570px;
+        left: 185px;
+        padding: 3px 0px;
+    }
+
+    ._t11 {
+        padding: 20px 3px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    ._t12 {
+        padding: 3px 10px !important;
+        transition: all 250ms ease-in-out !important;
+    }
+
+    p.all_p1 {
+        position: absolute;
+    }
+
+    p.pp1 {
+        top: 200px;
+        left: 210px;
+        display: none;
+    }
+
+    p.pp2 {
+        top: 365px;
+        left: 210px;
+        display: none;
+    }
+
+    p.pp3 {
+        top: 435px;
+        left: 210px;
+        display: none;
+    }
+
+    p.pp4 {
+        top: 565px;
         left: 210px;
         display: none;
     }
